@@ -17,7 +17,9 @@ const Header = () => {
           <span className="visually-hidden">Shopping Cart</span>
           <img src={shoppingCart} alt="" />
         </button>
-        <NavLinks />
+        <nav className="nav">
+          <NavLinks />
+        </nav>
       </div>
     </header>
   );
