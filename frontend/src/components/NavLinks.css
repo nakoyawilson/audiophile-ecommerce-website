@@ -1,5 +1,4 @@
-.footer .nav-links {
-  margin-top: 4.8rem;
+.nav-links {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,12 +9,12 @@
   line-height: 2.5rem;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: var(--pure-white);
 }
 
 /* Media Queries */
 @media screen and (min-width: 500px) {
-  .footer .nav-links {
-    margin-top: 3.2rem;
+  .nav-links {
     flex-direction: row;
     justify-content: flex-start;
     gap: 3.4rem;
@@ -23,14 +22,10 @@
 }
 
 @media screen and (min-width: 900px) {
-  .footer .nav-links {
-    margin-top: 0;
-  }
-
-  .footer .nav-link-wrapper {
+  .nav-link-wrapper {
     transition: all 0.5s ease-in-out;
   }
-  .footer .nav-link-wrapper:hover {
+  .nav-link-wrapper:hover {
     cursor: pointer;
     color: var(--dark-orange);
   }

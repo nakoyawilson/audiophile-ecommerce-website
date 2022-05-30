@@ -35,3 +35,8 @@ img,
 svg {
   display: block;
 }
+
+button {
+  background: none;
+  border: none;
+}

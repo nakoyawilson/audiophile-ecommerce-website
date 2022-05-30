@@ -1,7 +1,7 @@
 /* Shared Styles */
 
 .container {
-  width: min(87.2%, 327px);
+  width: 87.2%;
   margin-inline: auto;
 }
 
@@ -9,10 +9,21 @@
   width: 143px;
 }
 
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 /* Media Queries */
 @media screen and (min-width: 500px) {
   .container {
-    width: min(89.71354%, 689px);
+    width: 89.71354%;
   }
 }
 
