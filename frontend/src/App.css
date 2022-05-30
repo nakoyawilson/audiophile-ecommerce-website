@@ -1,0 +1,23 @@
+/* Shared Styles */
+
+.container {
+  width: min(87.2%, 327px);
+  margin-inline: auto;
+}
+
+.logo {
+  width: 143px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 500px) {
+  .container {
+    width: min(89.71354%, 689px);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    width: min(89.71354%, 1108px);
+  }
+}

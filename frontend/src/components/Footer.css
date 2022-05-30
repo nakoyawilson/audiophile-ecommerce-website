@@ -1,0 +1,139 @@
+.footer {
+  background: var(--black);
+  color: var(--pure-white);
+  text-align: center;
+  padding: 5.2rem 0 3.8rem;
+}
+.footer .container {
+  position: relative;
+}
+
+.footer .container::before {
+  content: "";
+  width: 101px;
+  height: 4px;
+  position: absolute;
+  top: -5.2rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  background: var(--dark-orange);
+}
+
+.footer .logo {
+  margin: 0 auto;
+}
+
+.footer .paragraph {
+  margin-top: 4.8rem;
+  font-weight: var(--font-weight-medium);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  opacity: 0.5;
+}
+
+.copyright {
+  margin-top: 4.8rem;
+  display: block;
+  font-weight: var(--font-weight-bold);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  opacity: 0.5;
+}
+
+.social-icons {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 500px) {
+  .footer {
+    text-align: left;
+    padding: 6rem 0 4.6rem;
+  }
+
+  .footer .container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    column-gap: 3.2rem;
+  }
+
+  .footer .container::before {
+    top: -6rem;
+    left: 0;
+    margin-inline: 0;
+  }
+
+  .footer .logo {
+    margin: 0;
+    grid-column: span 2;
+  }
+
+  .footer .nav-links {
+    grid-column: span 2;
+  }
+
+  .footer .paragraph {
+    margin-top: 3.2rem;
+    grid-column: span 2;
+  }
+
+  .copyright {
+    margin-top: 8rem;
+  }
+
+  .social-icons {
+    align-self: end;
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .footer {
+    padding: 7.5rem 0 4.8rem;
+  }
+
+  .footer .container::before {
+    top: -7.5rem;
+  }
+
+  .footer .logo,
+  .footer .nav-links,
+  .footer .paragraph {
+    grid-column: span 1;
+  }
+
+  .footer .nav-links {
+    justify-self: end;
+    align-self: start;
+  }
+
+  .footer .paragraph {
+    margin-top: 3.6rem;
+    width: min(100%, 540px);
+  }
+
+  .social-icon {
+    transition: all 0.5s ease-in-out;
+  }
+
+  .social-icon-wrapper:hover .social-icon {
+    fill: var(--dark-orange);
+  }
+
+  .copyright {
+    margin-top: 5.6rem;
+  }
+
+  .social-icons {
+    grid-column: 2 / 3;
+    grid-row: 2/ 3;
+    margin-top: 0;
+  }
+}
