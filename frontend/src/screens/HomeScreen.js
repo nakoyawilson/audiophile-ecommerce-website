@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import PageTitle from "../components/PageTitle";
 
 const HomeScreen = () => {
   const [products, setProducts] = useState([]);
@@ -14,6 +15,7 @@ const HomeScreen = () => {
 
   return (
     <div>
+      <PageTitle title="Audiophile e-commerce website" />
       <h1>{products.map((product) => product.name)}</h1>
       New product XX99 Mark II Headphones Experience natural, lifelike audio and
       exceptional build quality made for the passionate music enthusiast. See
